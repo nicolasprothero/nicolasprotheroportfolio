@@ -1,0 +1,39 @@
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8vh 0.6vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.sidebar-item.selected {
+  background-color: #f0f0f0;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-item-icon {
+  margin-right: 10px; 
+}
+
+.sidebar-item-title {
+  font-size: 0.8vw;
+  color: #333;
+  font-weight: 400;
+}
+
+.sidebar-item-tag {
+  padding: 0.6vh 0.4vw;
+  font-size: 0.8vw;
+  background-color: #ececec;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.sidebar-item-tag.wip {
+  background-color: #FFEEB3;
+}

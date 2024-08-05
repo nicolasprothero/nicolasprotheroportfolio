@@ -1,0 +1,65 @@
+#MainWindow {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+}
+
+#WindowHeader {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    padding: 5px 0px;
+    cursor: grab;
+}
+
+#WindowHeader:active {
+    cursor: grabbing;
+}
+
+#ThreeWindowButtons {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 5px;
+}
+
+#WindowTitle {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.WindowButton {
+    width: 12px;
+    height: 12px;
+    margin: 5px 3px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#WindowCloseButton:hover {
+    background-color: rgb(214, 85, 85);
+    cursor: pointer;
+}
+
+#WindowMaximizeButton:hover {
+    background-color: rgb(105, 209, 105);
+    cursor: pointer;
+}
+
+#WindowContent {
+    overflow-y: auto;
+    height: 93.6%;
+}
+
+#WindowContent img {
+    box-sizing: border-box;
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    padding: 2px;
+}

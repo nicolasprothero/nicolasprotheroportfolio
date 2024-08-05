@@ -1,0 +1,46 @@
+.desktop-canvas {
+    position: relative;
+    width: 99vw;
+    height: 92vh;
+}
+
+.main-window-container {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 59vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.secondary-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #282726;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.main-container {
+    color: #b7b7b7;
+    width: 9vw;
+    padding: 4px;
+    text-align: justify;
+    font-size: 1.2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    bottom: 0;
+}

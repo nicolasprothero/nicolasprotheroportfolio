@@ -1,0 +1,62 @@
+.primary-button {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 0.9vh 2vw;
+  font-size: 1.6vh;
+  color: #282726;
+  background-color: #F2F2F0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.icon-button {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 0.6vh 1vw 0.6vh 0.6vh;
+  font-size: 1.6vh;
+  color: #282726;
+  background-color: #F2F2F0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 0.6vw;
+  line-height: 0.7;
+}
+
+button.active {
+  background-color: #DDD;
+}
+
+.primary-button:hover, .icon-button:hover {
+  background-color: #EDEDED;
+}
+
+.primary-button:focus,
+.primary-button:focus-visible,
+.icon-button:focus,
+.icon-button:focus-visible {
+  background-color: #DDD;
+}
+
+.secondary-button {
+  font-size: 1.6vh;
+  padding: 0.8vh;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #282726;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.secondary-button:hover {
+  background-color: rgb(14, 14, 14);
+}

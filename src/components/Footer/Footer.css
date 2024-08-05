@@ -1,0 +1,46 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FCFCFC;
+
+  display: flex;
+  justify-content: space-between;
+  z-index: 900;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+  padding: 0.9vh;
+  align-items: center;
+}
+
+.vertical-spacer {
+  width: 1px;
+  height: 80%;
+  background-color: #E5E5E5;
+  margin: 0 0.3vw;
+}
+
+.clock-box {
+  padding: 10px 16px;
+  font-size: 12px;
+  background-color: #F6F6F6;
+  border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      color: #213547;
+      background-color: #F4F3F3;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
