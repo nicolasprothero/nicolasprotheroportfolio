@@ -5,7 +5,7 @@ date: 01-22-2022
 tags: ["product-design"]
 ---
 
-![My Image](/images/Projects/pilea/banner.png)
+![My Image](/images/Projects/pilea/ShotCrop.png)
 
 # pilea
 

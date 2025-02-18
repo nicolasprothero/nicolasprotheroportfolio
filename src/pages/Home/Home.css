@@ -34,7 +34,7 @@
 
 .main-container {
     color: #b7b7b7;
-    width: 9vw;
+    width: 150px;
     padding: 4px;
     text-align: justify;
     font-size: 1.2vh;
@@ -43,4 +43,32 @@
     line-height: normal;
     position: absolute;
     bottom: 0;
+}
+
+.mobile-overlay {
+    display: none;
+}
+
+.mobile-message {
+    text-align: center;
+    font-size: 1.2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+@media ((orientation: portrait)) {
+    .mobile-overlay {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 10000000;
+    }
 }

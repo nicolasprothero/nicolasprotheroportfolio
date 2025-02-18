@@ -67,19 +67,19 @@ const Home: React.FC<HomeProps> = ({ activeButton, selectedMarkdownPath }) => {
   return (
     <>
       <div className="desktop-canvas">
-      <Window title="" width={`${mainWindowSize.width}px`} height={`${mainWindowSize.height}px`} defaultPosition={mainWindowPosition} isClosable={false}>
-        <div>
-          {markdownContent && activeButton !== "home" ? (
-            <MarkdownRenderer content={markdownContent} />
-          ) : (
-            <div className="main-window-container" style={{ backgroundColor }}>
-              <div className="title-container">
+        <Window title="" width={`${mainWindowSize.width}px`} height={`${mainWindowSize.height}px`} defaultPosition={mainWindowPosition} isClosable={false}>
+          <div>
+            {markdownContent && activeButton !== "home" ? (
+              <MarkdownRenderer content={markdownContent} />
+            ) : (
+              <div className="main-window-container" style={{ backgroundColor }}>
+                <div className="title-container">
                   <img src={logoGif} />
-                <div className="title-text">PRODUCT DESIGN, WEB DEVELOPMENT, GRAPHIC DESIGN</div>
+                  <div className="title-text">PRODUCT DESIGN, WEB DEVELOPMENT, GRAPHIC DESIGN</div>
+                </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
         </Window>
         {activeButton === "home" && (
           <>
@@ -94,6 +94,9 @@ const Home: React.FC<HomeProps> = ({ activeButton, selectedMarkdownPath }) => {
         <div className="main-container">
           THIS WEBSITE WAS DESIGNED AND DEVELOPED BY NICOLAS PROTHERO
         </div>
+      </div>
+      <div className="mobile-overlay">
+        <div className="mobile-message">Please view my site on a desktop!<br/>I am still working on the mobile version.<br/><br/>nprothero0917@gmail.com</div>
       </div>
     </>
   );
